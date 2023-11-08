@@ -1,4 +1,35 @@
-# jonjuguna2.github.io
+using Saving_Yummyville;
+using System;
+using System.Numerics;
+using static System.Console;
+
+namespace Saving_Yummyville
+{
+    class Game
+    {
+       
+        Player player;
+        string GameTitle = "Saving Yummyville:)!";
+
+        public Game()
+        {
+            player = new Player();
+        }
+
+        public Game(string title)
+        {
+            GameTitle = title;
+            player = new Player();
+        }
+
+
+        public void TitleText()
+        {
+            
+            string TitleText = "";
+            Console.WriteLine (@"
+
+
 / __)  /__\  ( \/ )(_  _)( \( ) / __)  ( \/ )(  )(  )(  \/  )(  \/  )( \/ )( \/ )(_  _)(  )  (  )  ( ___)
 \__ \ /(__)\  \  /  _)(_  )  ( ( (_-.   \  /  )(__)(  )    (  )    (  \  /  \  /  _)(_  )(__  )(__  )__) 
 (___/(__)(__)  \/  (____)(_)\_) \___/   (__) (______)(_/\/\_)(_/\/\_) (__)   \/  (____)(____)(____)(____)
@@ -299,7 +330,7 @@ IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
                             player.PlayerChoice.Color = "Rescue, YOU RESCUE THE TREATS, YOU AND THE TREATS ATTACK CAPTAIN SOUR AND CAPTURE HIM...HURRAY!";
                             break;
                         case "3":
-                            player.PlayerChoice.Color = "Sneak, YOU SNEAK UP AND EAT CAPTAIN SOUR AND SAVE THE TREATS!"
+                            player.PlayerChoice.Color = "Sneak, YOU SNEAK UP AND EAT CAPTAIN SOUR AND SAVE THE TREATS!";
                             break;
                         case "4":
                             player.PlayerChoice.Color = "Magic, YOU USE HEAT MAGIC AND MELT CAPTAIN SOUR AND SAVES THE TREATS AND QUEEN SWEETNESS!";
@@ -319,7 +350,7 @@ IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
             Console.ReadKey();
 
             Console.Clear();
-            Console.WriteLine($"Treats: Your awesome, {player.Name} \r\n Comeback and Play again ꒰ᐢ..ᐢ꒱₊˚⊹ !");
+            Console.WriteLine($"Treats: Your awesome, {player.Name} \r\n Comeback and Play again ꒰ᐢ. .ᐢ꒱₊˚⊹ !");
             Console.ReadKey();
 
         }
@@ -330,8 +361,8 @@ IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
             Console.WriteLine(@"
 
 
-/ __)  /__\  ( \/ )(_  _)( \( ) / __)  ( \/ )(  )(  )(  \/  )(  \/  )( \/ )(_  _)(  )  (  )  ( ___)
-\__ \ /(__)\  \  /  _)(_  )  ( ( (_-.   \  /  )(__)(  )    (  \  /  \  /  _)(_  )(__  )__) 
+/ __)  /__\  ( \/ )(_  _)( \( ) / __)  ( \/ )(  )(  )(  \/  )(  \/  )( \/ )( \/ )(_  _)(  )  (  )  ( ___)
+\__ \ /(__)\  \  /  _)(_  )  ( ( (_-.   \  /  )(__)(  )    (  )    (  \  /  \  /  _)(_  )(__  )(__  )__) 
 (___/(__)(__)  \/  (____)(_)\_) \___/   (__) (______)(_/\/\_)(_/\/\_) (__)   \/  (____)(____)(____)(____)
                                                    
                            ⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -350,3 +381,8 @@ IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
 ⠀⠀⣼⠿⠿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   
                (COMEBACK AND PLAY AGAIN ૮꒰ྀི⸝⸝> . <⸝⸝꒱ྀིა)               
+");
+
+        }
+    }
+}
